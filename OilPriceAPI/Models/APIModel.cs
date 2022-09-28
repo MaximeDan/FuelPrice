@@ -1,14 +1,20 @@
 ﻿namespace OilPriceAPI.Models;
 
+using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
 
-public class OilPrice
-{
-    public int OilPriceId { get; set; }
-    public string FuelType { get; set; }
-    public string City { get; set; }
-    public string PostalCode { get; set; }
-    public string Address { get; set; }
-    public DateTime UpdateTime { get; set; }
-    public double Price { get; set; }
-
+public class ApiModelContext : DbContext
+{ 
+    public string DbPath { get; }
+    
+    public ApiModelContext() : base("FuelPrice")
+    {
+        DbPath = "localhost\\Max";
+    }
+    
+    public DbSet<OilPrice> OilPrices { get; set; }
+    protected override void OnModelCreating(DbModelBuilder  modelBuilder)
+    {
+        modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+    }
 }
