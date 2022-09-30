@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using OilPriceAPI.Data;
 using IHostingEnvironment = Microsoft.AspNetCore.Hosting.IHostingEnvironment;
 
-namespace OilPrice_CESIProject;
+namespace FuelPriceASPNET;
 
 public class StartUp
 {

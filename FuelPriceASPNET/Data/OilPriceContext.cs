@@ -1,7 +1,7 @@
 ﻿namespace OilPriceAPI.Data;
 
 using Microsoft.EntityFrameworkCore;
-using OilPriceAPI.Models;
+using FuelPriceASPNET.Models;
 
 public class OilPriceContext : DbContext
 {

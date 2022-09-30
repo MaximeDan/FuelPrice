@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OilPriceAPI", "OilPriceAPI\OilPriceAPI.csproj", "{EB32C171-5B8B-4F83-814A-79940E1D86EB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuelPriceASPNET", "FuelPriceASPNET\FuelPriceASPNET.csproj", "{EB32C171-5B8B-4F83-814A-79940E1D86EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

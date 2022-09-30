@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using OilPriceAPI.Data;
-using OilPriceAPI.Models;
+using FuelPriceASPNET.Models;
 
-namespace OilPriceAPI.Controllers
+namespace FuelPriceASPNET.Controllers
 {
     public class OilPriceMVCWithViewController : Controller
     {

@@ -1,4 +1,4 @@
-﻿namespace OilPriceAPI.Models;
+﻿namespace FuelPriceASPNET.Models;
 
 public class OilPrice
 {

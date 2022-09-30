@@ -24,7 +24,7 @@ namespace OilPriceAPI.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("OilPriceAPI.Models.OilPrice", b =>
+            modelBuilder.Entity("FuelPriceASPNET.Models.OilPrice", b =>
                 {
                     b.Property<int>("OilPriceId")
                         .ValueGeneratedOnAdd()
