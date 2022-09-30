@@ -15,7 +15,7 @@ public class StartUp
 
     public void ConfigureServices(IServiceCollection services)
     {
-        services.AddDbContext<ApiModelContext>(options =>
+        services.AddDbContext<OilPriceContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("DefaultDB")));
         
         services.AddDatabaseDeveloperPageExceptionFilter();

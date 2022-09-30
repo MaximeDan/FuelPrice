@@ -3,9 +3,9 @@
 using Microsoft.EntityFrameworkCore;
 using OilPriceAPI.Models;
 
-public class ApiModelContext : DbContext
+public class OilPriceContext : DbContext
 {
-    public ApiModelContext(DbContextOptions<ApiModelContext> options) : base(options)
+    public OilPriceContext(DbContextOptions<OilPriceContext> options) : base(options)
     {
     }
 
@@ -13,8 +13,7 @@ public class ApiModelContext : DbContext
     
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<OilPrice>().ToTable("Course");
+        modelBuilder.Entity<OilPrice>().ToTable("FuelPrice");
         modelBuilder.Entity<OilPrice>().Property(c => c.UpdateTime).HasDefaultValueSql("GETDATE()");
-
     }
 }
